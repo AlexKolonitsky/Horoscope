@@ -3,7 +3,7 @@ import { GET_ARTICLE_LIST_RESULT } from '../actions/news';
 export const initialState = {
   article: {},
   articleList: [],
-  error: ''
+  error: '',
 };
 
 export default (state = initialState, action) => {
@@ -12,7 +12,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         article: {},
-        articleList: action.result
+        articleList: action.result,
       };
     default:
       return state;
