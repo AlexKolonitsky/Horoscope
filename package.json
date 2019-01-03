@@ -2,7 +2,7 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
-    "android": "rndebugger-open --open --port 19001 && expo start --android",
+    "a": "rndebugger-open --open --port 19001 && expo start --android",
     "ios": "expo start --ios",
     "eject": "expo eject",
     "test": "node ./node_modules/jest/bin/jest.js --watchAll"
@@ -23,6 +23,7 @@
     "redux-saga": "^0.16.2"
   },
   "devDependencies": {
+    "@babel/preset-flow": "^7.0.0",
     "babel-eslint": "8",
     "babel-preset-expo": "^5.0.0",
     "eslint": "4.x",

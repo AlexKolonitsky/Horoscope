@@ -75,16 +75,17 @@ export default class HomeScreen extends React.Component {
       return (
         <Text style={styles.developmentModeText}>
           Development mode is enabled, your app will be slower but you can use useful development
-          tools. {learnMoreButton}
-        </Text>
-      );
-    } else {
-      return (
-        <Text style={styles.developmentModeText}>
-          You are not in development mode, your app will run at full speed.
+          tools.
+          {' '}
+          {learnMoreButton}
         </Text>
       );
     }
+    return (
+      <Text style={styles.developmentModeText}>
+          You are not in development mode, your app will run at full speed.
+      </Text>
+    );
   }
 
   _handleLearnMorePress = () => {
@@ -93,7 +94,7 @@ export default class HomeScreen extends React.Component {
 
   _handleHelpPress = () => {
     WebBrowser.openBrowserAsync(
-      'https://docs.expo.io/versions/latest/guides/up-and-running.html#can-t-see-your-changes'
+      'https://docs.expo.io/versions/latest/guides/up-and-running.html#can-t-see-your-changes',
     );
   };
 }
@@ -154,7 +155,7 @@ const styles = StyleSheet.create({
     ...Platform.select({
       ios: {
         shadowColor: 'black',
-        shadowOffset: {height: -3},
+        shadowOffset: { height: -3 },
         shadowOpacity: 0.1,
         shadowRadius: 3,
       },

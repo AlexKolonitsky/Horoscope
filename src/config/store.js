@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === 'development') {
 export default () => {
   const store = createStore(
     reducer,
-    composeWithDevTools(applyMiddleware(...middleware))
+    composeWithDevTools(applyMiddleware(...middleware)),
   );
 
   sagaMiddleware.run(rootSaga);
