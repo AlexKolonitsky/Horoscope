@@ -5,7 +5,9 @@
     "a": "rndebugger-open --open --port 19001 && expo start --android",
     "ios": "expo start --ios",
     "eject": "expo eject",
-    "test": "node ./node_modules/jest/bin/jest.js --watchAll"
+    "test": "node ./node_modules/jest/bin/jest.js --watchAll",
+    "prepush": "eslint src/ --ext .js",
+    "precommit": "eslint src/ --ext .js"
   },
   "jest": {
     "preset": "jest-expo"
