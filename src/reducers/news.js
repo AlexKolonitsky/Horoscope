@@ -1,3 +1,4 @@
+// @flow
 import { GET_ARTICLE_LIST_RESULT } from '../actions/news';
 
 export const initialState = {

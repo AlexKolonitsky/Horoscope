@@ -1,3 +1,4 @@
+// @flow
 import { combineReducers } from 'redux';
 import news from './news';
 
