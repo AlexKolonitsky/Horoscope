@@ -4,8 +4,6 @@ import { Image } from 'react-native';
 import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
 
 import TabBarIcon from '../components/TabBarIcon';
-import LinksScreen from '../screens/LinksScreen';
-import SettingsScreen from '../screens/SettingsScreen';
 import DailyScreen from '../screens/DailyScreen';
 import SignsMainScreen from '../screens/SignsMainScreen';
 import CompatibilityMainScreen from '../screens/CompatibilityMainScreen';
